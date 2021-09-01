@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chat App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container login-container">
+        <div class="row">
+            <div class="login">
+                <h3>My Chat App</h3>
+                <form>
+                    <div class="login-group">
+                        <input type="text" class="form-control" placeholder="Type Group Name..." value="" />
+                    </div>
+                    <div class="login-group">
+                        <input type="text" class="form-control" placeholder="Type Your Name..." value="" />
+                    </div>
+                    <div class="login-group">
+                        <button type="button" class="btnJoin" onclick="loginUser()">Join Group</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="menu">
+            <p class="group_name">Group Name : online users()<b></b></p>
+            <button type="button" class="btnout" onclick="logoutUser()">Logout</button>
+        </div>
+        <div class="chatbox">
+        </div>
+        <div class="message">
+            <input type="text" class="usermsg" />
+            <button type="button" class="submitmsg" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
